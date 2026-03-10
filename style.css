@@ -1,0 +1,48 @@
+.titulo {
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#links {
+  margin-left: 50px;
+}
+
+.outros {
+  margin-left: 50px;
+}
+
+.tabela-preco {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(244, 242, 238);
+}
+
+fieldset {
+  width: 30%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+#h1-form {
+  color: #555;
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.botao {
+  font-size: 13px;
+  background-color: rgba(141, 137, 137, 0.495);
+  margin-left: 5px;
+  color: black;
+}
+
+.botao:hover {
+  color: red;
+  font-size: 15px;
+  cursor: pointer;
+}

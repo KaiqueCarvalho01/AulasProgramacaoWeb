@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário de Contato</title>
+  </head>
+  <body>
+    <div class="titulo">
+    <h1 id="h1-form">Formulário de Contato</h1></div>
+        <fieldset>
+    <h2>Preencha o formulário abaixo para entrar em contato conosco.</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Nome:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Mensagem:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+      <input type="reset" value="Limpar" class="botao">
+      <input type="submit" value="Enviar" class="botao">
+</fieldset>
+    <ul>
+      <li><a href="index.html">Voltar para a página principal</a></li>
+    </ul>
+  </body>
+</html>
