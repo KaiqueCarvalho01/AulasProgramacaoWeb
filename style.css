@@ -1,6 +1,10 @@
 body {
   background-color: rgb(233, 239, 239);
 }
+p {
+  font-size: 16px;
+  margin: 5px;
+}
 .titulo {
   color: #333;
   font-family: Arial, sans-serif;
