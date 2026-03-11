@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(233, 239, 239);
+}
 .titulo {
   color: #333;
   font-family: Arial, sans-serif;
@@ -16,7 +19,7 @@
 .tabela-preco {
   width: 80%;
   margin: 20px auto;
-  background-color: rgb(244, 242, 238);
+  background-color: rgb(255, 255, 255);
 }
 
 fieldset {
@@ -35,14 +38,26 @@ h2 {
 }
 
 .botao {
-  font-size: 13px;
-  background-color: rgba(141, 137, 137, 0.495);
+  font-size: 15px;
+  background-color: rgb(62, 67, 236);
   margin-left: 5px;
-  color: black;
+  color: white;
+  border-radius: 10%;
 }
 
 .botao:hover {
-  color: red;
-  font-size: 15px;
+  color: rgba(62, 68, 236, 0.697);
+  font-size: 16px;
   cursor: pointer;
+  color: white;
+}
+
+input,
+textarea {
+  background-color: rgb(233, 242, 239);
+}
+
+th {
+  font-weight: bold;
+  font-size: 18px;
 }
