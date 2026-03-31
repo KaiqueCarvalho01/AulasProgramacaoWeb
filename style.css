@@ -1,18 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(233, 239, 239);
 }
 
 .navbar {
-  background-color: red;
+  background-color: #232a2d;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 12px;
-  height: 40px;
+  height: 50px;
+  margin-top: 0px;
 }
-.logo {
-  background-color: blue;
+.logo img {
+  width: 35px;
+  display: flex;
 }
 .menu a {
   color: white;
@@ -32,7 +40,7 @@ p {
 }
 
 .descricao p {
-  font-size: 30px;
+  font-size: 28px;
   display: flex;
   justify-content: center;
 }
@@ -88,4 +96,28 @@ textarea {
 th {
   font-weight: bold;
   font-size: 18px;
+}
+
+/* Seção da Imagem de Fundo */
+.hero {
+  height: calc(100vh - 50px); /* Ocupa a tela toda menos a altura da nav */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/background/mt-background-home.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
 }
