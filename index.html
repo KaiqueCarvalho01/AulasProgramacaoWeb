@@ -13,7 +13,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="logo"><img src="/img/logo/bike-icon.ico" alt="logo" /></div>
+      <div class="logo">
+        <img src="/img/logo/bike-icon.ico" alt="logo" /><a
+          href="/index.html"
+        ></a>
+      </div>
       <div class="menu">
         <a href="/index.html">Home</a>
         <a href="/motos.html">Motos</a>
@@ -33,12 +37,35 @@
 
     <br />
 
-    <p>Algumas marcas:</p>
-    <ul id="links">
-      <li><a href="motos/ducati.html">Ducati</a></li>
-      <li><a href="motos/kawasaki.html">Kawasaki</a></li>
-      <li><a href="motos/suzuki.html">Suzuki</a></li>
-    </ul>
+<section class="container-marcas">
+  <div class="card">
+    <div class="card-header ducati"></div>
+    <div class="card-body">
+      <h3>Ducati</h3>
+      <p>Performance italiana e design sofisticado.</p>
+      <a href="motos/ducati.html" class="btn-card">Ver Modelos</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header kawasaki"></div>
+    <div class="card-body">
+      <h3>Kawasaki</h3>
+      <p>A força bruta das máquinas japonesas.</p>
+      <a href="motos/kawasaki.html" class="btn-card">Ver Modelos</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header suzuki"></div>
+    <div class="card-body">
+      <h3>Suzuki</h3>
+      <p>Tradição e confiabilidade em duas rodas.</p>
+      <a href="motos/suzuki.html" class="btn-card">Ver Modelos</a>
+    </div>
+  </div>
+</section>
+  
     <br />
 
     <iframe

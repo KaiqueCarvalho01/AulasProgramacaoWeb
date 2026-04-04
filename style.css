@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(233, 239, 239);
+  background-color: #1a1a1a;
 }
 
 .navbar {
@@ -23,17 +23,23 @@ body {
   display: flex;
 }
 .menu a {
-  color: white;
-  /* border: 1px solid black; */
+  color: #eeeeee;
   text-decoration: none;
   margin-left: 15px;
+  font-family: sans-serif;
+  transition: 0.3s;
 }
+
+.menu a:hover {
+  color: #ff4d4d; 
+}
+
 p {
   font-size: 16px;
   margin: 5px;
 }
 .titulo {
-  color: #333;
+  color: #eeeeee;
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 20px;
@@ -55,9 +61,59 @@ p {
 .tabela-preco {
   width: 80%;
   margin: 20px auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #eeeeee;
 }
 
+/* Container que segura os cards */
+.container-marcas {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;               /* Espaço entre os cards */
+  padding: 40px 20px;
+  flex-wrap: wrap;         /* Se a tela for pequena, eles quebram linha */
+}
+
+/* Estilo individual do Card */
+.card {
+  background-color: #eeeeee;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;      
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efeito de flutuar ao passar o mouse */
+}
+
+/* Espaço para uma cor ou imagem no topo do card */
+.card-header {
+  height: 150px;
+  transition: height 0.3s ease;
+  background-color: #444;
+}
+
+/* Cores temáticas para cada marca (Substituir por imagens) */
+.ducati { background-color: #ce1126; }    /* Vermelho Ducati */
+.kawasaki { background-color: #66cc33; }  /* Verde Kawasaki */
+.suzuki { background-color: #003399; }    /* Azul Suzuki */
+
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.btn-card {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #232a2d;
+  color:#eeeeee;
+  text-decoration: none;
+  border-radius: 5px;
+}
 fieldset {
   width: 30%;
 }
@@ -77,7 +133,7 @@ h2 {
   font-size: 15px;
   background-color: rgb(62, 67, 236);
   margin-left: 5px;
-  color: white;
+  color: #eeeeee;
   border-radius: 10%;
 }
 
@@ -85,12 +141,12 @@ h2 {
   color: rgba(62, 68, 236, 0.697);
   font-size: 16px;
   cursor: pointer;
-  color: white;
+  color: #eeeeee;
 }
 
 input,
 textarea {
-  background-color: rgb(233, 242, 239);
+  background-color: #eeeeee;
 }
 
 th {
@@ -110,14 +166,15 @@ th {
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   text-align: center;
-  color: white;
-}
-
-.hero-content h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  color: #eeeeee;
 }
 
 .hero-content p {
   font-size: 1.2rem;
+}
+.hero-content .titulo-pagina { 
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
