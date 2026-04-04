@@ -38,30 +38,15 @@ p {
   font-size: 16px;
   margin: 5px;
 }
-.titulo {
-  color: #eeeeee;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 20px;
-}
 
-.descricao p {
-  font-size: 28px;
+.hero-tabela {
+  height: 30vh; 
   display: flex;
   justify-content: center;
-}
-#links {
-  margin-left: 50px;
-}
-
-.outros {
-  margin-left: 50px;
-}
-
-.tabela-preco {
-  width: 80%;
-  margin: 20px auto;
-  background-color: #eeeeee;
+  align-items: center;
+  text-align: center;
+  color: #eeeeee;
+  background-color: #1a1a1a;
 }
 
 /* Container que segura os cards */
@@ -114,8 +99,14 @@ p {
   text-decoration: none;
   border-radius: 5px;
 }
-fieldset {
-  width: 30%;
+
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
 }
 
 h2 {
@@ -127,21 +118,6 @@ h2 {
   font-family: "Trebuchet MS", sans-serif;
   text-align: left;
   margin-left: 50px;
-}
-
-.botao {
-  font-size: 15px;
-  background-color: rgb(62, 67, 236);
-  margin-left: 5px;
-  color: #eeeeee;
-  border-radius: 10%;
-}
-
-.botao:hover {
-  color: rgba(62, 68, 236, 0.697);
-  font-size: 16px;
-  cursor: pointer;
-  color: #eeeeee;
 }
 
 input,
@@ -281,4 +257,153 @@ th {
   color: #eeeeee;
   text-decoration: none;
   font-family: sans-serif;
+}
+
+.especificacoes-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-sessao {
+  color: #eeeeee;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.spec-item {
+  background-color: #232a2d;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  color: #eeeeee;
+}
+
+.spec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.spec-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+
+.dado {
+  flex: 1;
+  min-width: 150px; /* Garante que os dados não fiquem esmagados */
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+.dado strong {
+  color: #ff4d4d; /* Cor de destaque para os rótulos */
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* Container de Contato */
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+.contato-card {
+    background-color: #232a2d; /* Mesmo cinza dos outros cards */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #eeeeee;
+}
+
+#h1-form {
+    color: #ff4d4d; /* Vermelho de destaque */
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #1a1a1a;
+    color: #eeeeee;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #ff4d4d;
+}
+
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.botao-enviar, .botao-reset {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.botao-enviar {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.botao-reset {
+    background-color: #444;
+    color: #ccc;
+}
+
+.botao-enviar:hover { background-color: #e60000; }
+.botao-reset:hover { background-color: #555; }
+
+.cta-contato {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111;
+    color: #eeeeee;
 }
