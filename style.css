@@ -154,7 +154,34 @@ th {
   font-size: 18px;
 }
 
-/* Seção da Imagem de Fundo */
+.tabela-preco {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #232a2d; /* Cor escura para combinar com o tema */
+  color: #eeeeee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-preco th {
+  background-color: #ff4d4d; /* Vermelho esportivo no topo */
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.tabela-preco td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.tabela-preco tr:hover {
+  background-color: #333; /* Efeito ao passar o mouse na linha */
+}
+
+/* Imagem de Fundo */
 .hero {
   height: calc(100vh - 50px); /* Ocupa a tela toda menos a altura da nav */
   background-image:
@@ -177,4 +204,81 @@ th {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+
+.hero-marca {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #eeeeee;
+}
+
+/* Cores de Destaque */
+.bg-kawasaki { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #66cc33; }
+.border-kawasaki { border-left: 5px solid #66cc33; }
+.tag-kawasaki { background-color: #66cc33; }
+
+.bg-suzuki { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #003399; }
+.border-suzuki { border-left: 5px solid #003399; }
+.tag-suzuki { background-color: #003399; }
+
+.bg-ducati { 
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #ce1126; 
+}
+.border-ducati { border-left: 5px solid #ce1126; }
+.tag-ducati { 
+  background-color: #ce1126 !important; 
+}
+
+.vitrine-motos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+/* Card minimalista de modelo */
+.modelo-card {
+  background-color: #232a2d;
+  color: #eeeeee;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.modelo-card:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.modelo-info h3 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  background-color: #ce1126;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.voltar {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.voltar a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-family: sans-serif;
 }
