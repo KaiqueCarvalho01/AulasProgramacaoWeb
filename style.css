@@ -162,7 +162,7 @@ th {
   height: calc(100vh - 50px); /* Ocupa a tela toda menos a altura da nav */
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/background/mt-background-home.jpg");
+    url("img/background/mt-background-home.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
