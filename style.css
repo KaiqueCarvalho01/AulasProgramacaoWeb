@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a !important;
+  color: #eeeeee !important;
+  font-family: sans-serif;
 }
 
 .navbar {
