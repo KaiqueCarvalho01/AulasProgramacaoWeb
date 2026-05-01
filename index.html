@@ -7,20 +7,29 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="img/logo/bike-icon.ico" type="image/x-icon" />
   <title>Motos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <img src="img/logo/bike-icon.ico" alt="logo" /><a href="index.html"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo/bike-icon.ico" alt="logo" width="35" height="35" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="motos.html">Motos</a></li>
+          <li class="nav-item"><a class="nav-link" href="form.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="tabela.html">Preços</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="motos.html">Motos</a>
-      <a href="form.html">Contato</a>
-      <a href="tabela.html">Preços</a>
-    </div>
-  </div>
+  </nav>
 
   <header class="hero">
     <div class="hero-content">
@@ -33,31 +42,45 @@
 
   <br />
 
-  <section class="container-marcas">
-    <div class="card">
-      <div class="card-header ducati"></div>
-      <div class="card-body">
-        <h3>Ducati</h3>
-        <p>Performance italiana e design sofisticado.</p>
-        <a href="motos/ducati.html" class="btn-card">Ver Modelos</a>
+  <section class="container py-5">
+    <div class="row g-4">
+      <!-- Card Ducati -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-danger text-white text-center py-4">
+          </div>
+          <div class="card-body text-center">
+            <h3 class="card-title">Ducati</h3>
+            <p class="card-text">Performance italiana e design sofisticado.</p>
+            <a href="motos/ducati.html" class="btn btn-dark">Ver Modelos</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header kawasaki"></div>
-      <div class="card-body">
-        <h3>Kawasaki</h3>
-        <p>A força bruta das máquinas japonesas.</p>
-        <a href="motos/kawasaki.html" class="btn-card">Ver Modelos</a>
+      <!-- Card Kawasaki -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-success text-white text-center py-4">
+          </div>
+          <div class="card-body text-center">
+            <h3 class="card-title">Kawasaki</h3>
+            <p class="card-text">A força bruta das máquinas japonesas.</p>
+            <a href="motos/kawasaki.html" class="btn btn-dark">Ver Modelos</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header suzuki"></div>
-      <div class="card-body">
-        <h3>Suzuki</h3>
-        <p>Tradição e confiabilidade em duas rodas.</p>
-        <a href="motos/suzuki.html" class="btn-card">Ver Modelos</a>
+      <!-- Card Suzuki -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-primary text-white text-center py-4">
+          </div>
+          <div class="card-body text-center">
+            <h3 class="card-title">Suzuki</h3>
+            <p class="card-text">Tradição e confiabilidade em duas rodas.</p>
+            <a href="motos/suzuki.html" class="btn btn-dark">Ver Modelos</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -69,6 +92,10 @@
     <p>Nossa equipe está pronta para acelerar com você.</p>
     <a href="form.html" class="btn-card">Entre em Contato</a>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </body>
 
