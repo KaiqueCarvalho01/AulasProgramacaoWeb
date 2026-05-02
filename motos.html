@@ -1,18 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="img/logo/bike-icon.ico" type="image/x-icon" />
-  <title>Motos</title>
+  <title>Fichas Técnicas - Motos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style="background-color: #1a1a1a; color: #eeeeee;">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/logo/bike-icon.ico" alt="logo" width="35" height="35" />
@@ -23,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="motos.html">Motos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="motos.html">Motos</a></li>
           <li class="nav-item"><a class="nav-link" href="form.html">Contato</a></li>
           <li class="nav-item"><a class="nav-link" href="tabela.html">Preços</a></li>
         </ul>
@@ -31,85 +34,130 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-content">
-      <h1 class="titulo-pagina">Fichas Técnicas</h1>
-      <p>Compare o desempenho das máquinas mais icônicas.</p>
+
+  <header class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="hero-content text-white">
+      <h1 class="display-4 fw-bold text-uppercase text-danger mb-3">Fichas Técnicas</h1>
+      <p class="lead">Compare o desempenho das máquinas mais icônicas.</p>
     </div>
   </header>
-  <section class="especificacoes-container">
-    <h2 class="titulo-sessao">Destaques Técnicos</h2>
+
+  <!-- ESPECIFICAÇÕES TÉCNICAS -->
+  <section class="container py-5">
+    <h2 class="text-center mb-5 text-uppercase">Destaques Técnicos</h2>
+
+    <div class="row g-4">
+
+      <!-- Ducati Monster -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light border-danger shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="card-title mb-0">Ducati Monster 796</h4>
+              <!-- Badge Bootstrap -->
+              <span class="badge bg-danger">Naked</span>
+            </div>
+            <!-- List Group Bootstrap -->
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Cilindrada:</strong> 803 cc</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Potência:</strong> 87 cv</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Torque:</strong> 7,9 kgfm</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Peso:</strong> 167 kg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kawasaki Ninja ZX-14R -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light border-success shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="card-title mb-0">Kawasaki Ninja ZX-14R</h4>
+              <span class="badge bg-success">Sport Tourer</span>
+            </div>
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Cilindrada:</strong> 1.441 cc</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Potência:</strong> 210 cv</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Torque:</strong> 16,1 kgfm</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Peso:</strong> 269 kg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suzuki GSX 750 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light border-primary shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="card-title mb-0">Suzuki GSX 750 (SRAD)</h4>
+              <span class="badge bg-primary">Super Sport</span>
+            </div>
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Cilindrada:</strong> 750 cc</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Potência:</strong> 150 cv</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Torque:</strong> 8,8 kgfm</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Peso:</strong> 190 kg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ducati Panigale -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light border-danger shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="card-title mb-0">Panigale V4</h4>
+              <span class="badge bg-danger">Superbike</span>
+            </div>
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Motor:</strong> 1.103 cc</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Potência:</strong> 215,5 cv</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Torque:</strong> 12,6 kgfm</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Peso:</strong> 175 kg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kawasaki ZX-10R -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-dark text-light border-success shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="card-title mb-0">Ninja ZX-10R</h4>
+              <span class="badge bg-success">Sport</span>
+            </div>
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Motor:</strong> 998 cc</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Potência:</strong> 203 cv</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Torque:</strong> 11,7 kgfm</li>
+              <li class="list-group-item bg-dark text-light border-secondary"><strong>Peso:</strong> 207 kg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <section class="especificacoes-container">
-    <div class="spec-item border-ducati">
-      <div class="spec-header">
-        <h3>Ducati Monster 796</h3>
-        <span class="tag tag-ducati">Naked</span>
+  <!--FOOTER -->
+  <footer class="text-center py-4 mt-auto" style="background-color: #111; border-top: 1px solid #333;">
+    <div class="container text-secondary">
+      <div class="mb-2">
+        <a href="#" class="text-secondary text-decoration-none mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-secondary text-decoration-none mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-secondary text-decoration-none mx-2 fs-5"><i class="bi bi-youtube"></i></a>
       </div>
-      <div class="spec-grid">
-        <div class="dado"><strong>Cilindrada</strong> 803 cc</div>
-        <div class="dado"><strong>Potência</strong> 87 cv</div>
-        <div class="dado"><strong>Torque</strong> 7,9 kgfm</div>
-        <div class="dado"><strong>Peso</strong> 167 kg</div>
-      </div>
+      <p class="mb-0">&copy; 2026 Projeto Motos. Todos os direitos reservados.</p>
     </div>
+  </footer>
 
-    <div class="spec-item border-kawasaki">
-      <div class="spec-header">
-        <h3>Kawasaki Ninja ZX-14R</h3>
-        <span class="tag tag-kawasaki">Sport Tourer</span>
-      </div>
-      <div class="spec-grid">
-        <div class="dado"><strong>Cilindrada</strong> 1.441 cc</div>
-        <div class="dado"><strong>Potência</strong> 210 cv</div>
-        <div class="dado"><strong>Torque</strong> 16,1 kgfm</div>
-        <div class="dado"><strong>Peso</strong> 269 kg</div>
-      </div>
-    </div>
-
-    <div class="spec-item border-suzuki">
-      <div class="spec-header">
-        <h3>Suzuki GSX 750 (SRAD)</h3>
-        <span class="tag tag-suzuki">Super Sport</span>
-      </div>
-      <div class="spec-grid">
-        <div class="dado"><strong>Cilindrada</strong> 750 cc</div>
-        <div class="dado"><strong>Potência</strong> 150 cv</div>
-        <div class="dado"><strong>Torque</strong> 8,8 kgfm</div>
-        <div class="dado"><strong>Peso</strong> 190 kg</div>
-      </div>
-    </div>
-    <div class="spec-item border-ducati">
-      <div class="spec-header">
-        <h3>Panigale V4</h3>
-        <span class="tag tag-ducati">Superbike</span>
-      </div>
-      <div class="spec-grid">
-        <div class="dado"><strong>Motor:</strong> 1.103 cc</div>
-        <div class="dado"><strong>Potência:</strong> 215,5 cv</div>
-        <div class="dado"><strong>Peso:</strong> 175 kg</div>
-        <div class="dado"><strong>Torque:</strong> 12,6 kgfm</div>
-      </div>
-    </div>
-
-    <div class="spec-item border-kawasaki">
-      <div class="spec-header">
-        <h3>Ninja ZX-10R</h3>
-        <span class="tag tag-kawasaki">Sport</span>
-      </div>
-      <div class="spec-grid">
-        <div class="dado"><strong>Motor:</strong> 998 cc</div>
-        <div class="dado"><strong>Potência:</strong> 203 cv</div>
-        <div class="dado"><strong>Peso:</strong> 207 kg</div>
-        <div class="dado"><strong>Torque:</strong> 11,7 kgfm</div>
-      </div>
-    </div>
-  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
